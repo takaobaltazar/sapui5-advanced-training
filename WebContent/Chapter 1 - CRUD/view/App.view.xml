@@ -3,7 +3,9 @@
     xmlns="sap.m" xmlns:mvc="sap.ui.core.mvc" displayBlock="true">
     <App id="app">
     	<pages>
-    		
+    		<Page title="{i18n>pageTitle}">
+	    		<mvc:XMLView viewName="sapui5.advanced.training.template.view.Overview"/>
+    		</Page>
     	</pages>
     </App>
 </mvc:View>

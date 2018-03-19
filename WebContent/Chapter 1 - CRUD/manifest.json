@@ -1,0 +1,43 @@
+{
+	"_version" : "1.8.0",
+	"sap.app" : {
+		"id" : "sapui5.advanced.training.template",
+		"type" : "application",
+		"i18n" : "i18n/i18n.properties",
+		"title" : "{{appTitle}}",
+		"description" : "{{appDescription}}",
+		"applicationVersion" : {
+			"vevrsion" : "1.0.0"
+		}
+	},
+	"sap.ui" : {
+		"technology" : "UI5",
+		"deviceTypes" : {
+			"desktop" : true,
+			"tablet" : true,
+			"phone" : true
+		}
+	},
+	"sap.ui5" : {
+		"rootView" : {
+			"viewName" : "sapui5.advanced.training.template.view.App",
+			"type" : "XML",
+			"id" : "app"
+		},
+		"dependencies" : {
+			"minUI5Version" : "1.30",
+			"libs" : {
+				"sap.m" : {}
+			}
+		},
+		"models" : {
+			"i18n" : {
+				"type" : "sap.ui.model.resource.ResourceModel",
+				"settings" : {
+					"bundleName" : "sapui5.advanced.training.template.i18n.i18n"
+				}
+			}
+		}
+
+	}
+}

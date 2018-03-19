@@ -1,0 +1,11 @@
+<mvc:View xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:core="sap.ui.core">
+	<Table>
+		<headerToolbar>
+			<Toolbar>
+				<Title text="{i18n>crudDemo}"/>
+				<ToolbarSpacer/>
+				<core:Icon src="sap-icon://add"/>
+			</Toolbar>
+		</headerToolbar>
+	</Table>
+</mvc:View>
