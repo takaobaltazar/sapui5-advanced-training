@@ -1,0 +1,9 @@
+<core:FragmentDefinition xmlns="sap.m" xmlns:core="sap.ui.core" >
+	<Dialog title="{i18n>addEntry}">
+		<Label design="Bold" text="{i18n>confirmMsg}"/>
+		<buttons>
+			<Button text="{i18n>delete}" press="onDelete"/>
+			<Button text="{i18n>close}" press="onCloseConfirm"/>
+		</buttons>
+	</Dialog>
+</core:FragmentDefinition>

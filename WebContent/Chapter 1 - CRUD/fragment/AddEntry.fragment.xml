@@ -1,0 +1,18 @@
+<core:FragmentDefinition xmlns="sap.m" xmlns:core="sap.ui.core" >
+	<Dialog title="{i18n>addEntry}">
+		<HBox>
+			<VBox class="sapUiContentPadding">
+				<Label text="{i18n>name}"/>
+				<Input value="{createEntry>/Name}"/>			
+			</VBox>
+			<VBox class="sapUiContentPadding">
+				<Label text="{i18n>salary}"/>
+				<Input value="{createEntry>/Salary}"/>
+			</VBox>
+		</HBox>
+		<buttons>
+			<Button text="{i18n>add}" press="onCreateEntry"/>
+			<Button text="{i18n>close}" press="onClose"/>
+		</buttons>
+	</Dialog>
+</core:FragmentDefinition>

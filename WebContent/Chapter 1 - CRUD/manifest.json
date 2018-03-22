@@ -8,6 +8,15 @@
 		"description" : "{{appDescription}}",
 		"applicationVersion" : {
 			"vevrsion" : "1.0.0"
+		},
+		"dataSources" : {
+			"hanademo" : {
+				"uri" : "https://tutorialp1941830375trial.hanatrial.ondemand.com/saptm/training/odata/odata.xsodata/",
+				"type" : "OData",
+				"odataVersion" : {
+					"settings" : "2.0"
+				}
+			}
 		}
 	},
 	"sap.ui" : {
@@ -36,8 +45,39 @@
 				"settings" : {
 					"bundleName" : "sapui5.advanced.training.template.i18n.i18n"
 				}
+			},
+			"hanademoModel" : {
+				"dataSource" : "hanademo"
 			}
+		},
+		"routing": {
+		  	"config": {
+				"routerClass": "sap.m.routing.Router",
+				"viewType": "XML",
+				"viewPath": "sapui5.advanced.training.template.view",
+				"controlId": "app",
+				"controlAggregation": "pages"
+			},
+		  	"routes": [
+				{
+				  	"pattern": "",
+				  	"name": "overview",
+				  	"target": "overview"
+				},
+				{
+				  	"pattern": "detail/{employeeID}",
+				  	"name": "detail",
+				  	"target": "detail"
+				}
+		  	],
+		  	"targets": {
+				"overview": {
+				  	"viewName": "Overview"
+				},
+				"detail": {
+				  	"viewName": "Detail"
+				}
+		  	}
 		}
-
 	}
 }
